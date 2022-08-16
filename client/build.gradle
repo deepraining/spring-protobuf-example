@@ -1,0 +1,7 @@
+group = 'spe.client'
+version = "1.0"
+archivesBaseName = 'client-pro'
+sourceCompatibility = 1.8
+description = 'Spring Protobuf Example'
+
+mainClassName = 'spe.client.App'

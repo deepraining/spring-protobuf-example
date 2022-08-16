@@ -1,0 +1,4 @@
+include ':spring'
+include ':client'
+
+rootProject.name = 'spring-protobuf-example'

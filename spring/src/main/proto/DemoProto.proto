@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package spe.spring.proto;
+
+message ReqProto {
+  int64 page_size = 10;
+  int64 page_num = 20;
+  string search_key = 30;
+}
+
+message ResProto {
+  int64 code = 10;
+  string message = 20;
+  repeated ItemProto data = 30;
+  string extraMsg = 40;
+}
+
+message ItemProto {
+  int64 id = 10;
+  string name = 20;
+}

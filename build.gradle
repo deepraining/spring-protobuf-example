@@ -1,0 +1,44 @@
+buildscript {
+  repositories {
+    mavenLocal()
+    // https://maven.aliyun.com/mvn/view
+    maven { url 'https://maven.aliyun.com/repository/public' }
+    jcenter()
+    mavenCentral()
+    maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+    maven { url 'https://plugins.gradle.org/m2/' }
+  }
+  dependencies {
+    classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.17'
+  }
+}
+
+plugins {
+  id 'java'
+  id 'application'
+  id 'idea'
+}
+
+allprojects {
+  repositories {
+    mavenLocal()
+    maven { url 'https://maven.aliyun.com/repository/public' }
+    jcenter()
+    mavenCentral()
+    maven { url 'http://repo.spring.io/release' }
+    maven { url 'http://repo.spring.io/milestone' }
+    maven { url 'http://repo.spring.io/snapshot' }
+  }
+}
+
+subprojects {
+  apply plugin: 'java'
+  apply plugin: 'application'
+  apply plugin: 'idea'
+  apply plugin: 'com.google.protobuf'
+
+  dependencies {
+    implementation 'com.google.protobuf:protobuf-java:3.19.1'
+    implementation 'com.google.protobuf:protobuf-java-util:3.19.1'
+  }
+}
