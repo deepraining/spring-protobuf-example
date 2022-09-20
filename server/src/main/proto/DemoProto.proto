@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package spe.spring.proto;
+package spe.server.proto;
 
 message ReqProto {
   int64 page_size = 10;

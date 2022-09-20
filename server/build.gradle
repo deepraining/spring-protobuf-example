@@ -3,13 +3,13 @@ plugins {
   id "io.spring.dependency-management" version "1.0.7.RELEASE"
 }
 
-group = 'spe.spring'
+group = 'spe.server'
 version = "1.0"
-archivesBaseName = 'spring-pro'
+archivesBaseName = 'server-pro'
 sourceCompatibility = 1.8
 description = 'Spring Protobuf Example'
 
-mainClassName = 'spe.spring.App'
+mainClassName = 'spe.server.App'
 
 dependencies {
   // spring boot

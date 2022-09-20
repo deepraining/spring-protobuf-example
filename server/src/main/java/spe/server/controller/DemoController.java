@@ -1,4 +1,4 @@
-package spe.spring.controller;
+package spe.server.controller;
 
 import com.google.protobuf.TextFormat;
 import org.springframework.http.HttpHeaders;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import spe.spring.proto.DemoProto;
+import spe.server.proto.DemoProto;
 
 import java.io.*;
 import java.util.Arrays;
